@@ -21,3 +21,5 @@ Define deterministic, default-deny rules for deciding whether an API definition 
 
 Reference implementation (pure logic):
 - `src/domains/api-definitions/pure/apiDefinitionCompletenessDecision.ts`
+
+Note: This reference implementation path is expected to exist in an applied product repository, not in this protocol repository.

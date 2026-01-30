@@ -28,7 +28,17 @@ They are repo-local “save points” that capture what is true at major milesto
 ### Where checkpoints live
 - `/checkpoints/`
 
+Note: Checkpoints are created and updated in applied product repositories that use this protocol.
+This protocol repository defines checkpoint expectations and discipline, but does not execute checkpoints itself.
+
 ### Discipline
 - Each checkpoint is written once.
 - If revised, add dated sections rather than rewriting history.
 - Major phases should not advance without an explicit checkpoint.
+
+---
+ 
+## CP-4 (Execution Realization)
+ 
+CP-4 begins only in applied product repositories.
+This protocol repository defines the rules, boundaries, and required artifacts for CP-4, but does not “start CP-4” here.

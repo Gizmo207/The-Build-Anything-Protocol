@@ -19,3 +19,5 @@ Define deterministic, default-deny rules for deciding whether data exposure is a
 
 Reference implementation (pure logic):
 - `src/domains/data-exposure-policy/pure/dataExposureDecision.ts`
+
+Note: This reference implementation path is expected to exist in an applied product repository, not in this protocol repository.
