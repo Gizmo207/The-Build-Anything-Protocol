@@ -1,18 +1,3 @@
-# Data Model Emergence (07)
+# Data and state (07)
 
-## Purpose
-
-Describe how the control-plane data model emerges from decision inputs, invariants, lifecycle transitions, and ownership boundaries.
-This phase defines conceptual entities and relationships that should remain stable even if implementation details change.
-
-## What belongs here
-
-- Conceptual entities
-- Conceptual relationships
-- Control-plane invariants
-
-## What does not belong here
-
-- Physical database schema specifics
-- ORM decisions
-- Migration tooling choices
+Derive state from decisions, invariants, lifecycle and ownership. Record entities/relationships only where needed; no database is implied. Identify authoritative state, integrity constraints, atomic boundaries, concurrency/conflicts, retention/deletion, migrations and code/data recovery. Stateless artifacts can explain why persistence is unnecessary.

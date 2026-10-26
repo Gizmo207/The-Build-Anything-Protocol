@@ -1,18 +1,3 @@
-# Decision Rules (06)
+# Decision rules (06)
 
-## Purpose
-
-Define deterministic, default-deny rules for key safety and correctness decisions.
-These rules describe what must be decided and what outcomes exist.
-
-## What belongs here
-
-- Decision inputs (conceptual)
-- Invariants
-- Outcomes
-
-## What does not belong here
-
-- Controller logic
-- Persistence/I-O behavior
-- UI policy logic
+Define decision inputs with provenance, invariants, allowed/denied/invalid outcomes, authoritative owner and enforcement point. Pure logic stays deterministic for explicit inputs and separate from I/O. Missing/invalid required safety evidence defaults to deny. Test direct boundary bypass and current permissions; prior UI checks or snapshots are insufficient.

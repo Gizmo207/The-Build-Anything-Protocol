@@ -1,16 +1,3 @@
-# User Stories (02)
+# Users (02)
 
-## Purpose
-
-Make the primary and secondary users explicit so the system can be designed around real actors and goals.
-
-## What belongs here
-
-- Primary users
-- Secondary users
-
-## What does not belong here
-
-- UI design
-- Data model decisions
-- Implementation details
+Identify primary/secondary actors, affected parties, goals and accessibility needs. Define actor authority without inventing policy. Describe who operates/recovers the result. For a local artifact one user and owner may suffice.

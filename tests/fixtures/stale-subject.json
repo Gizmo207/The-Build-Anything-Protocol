@@ -1,0 +1,13 @@
+{
+  "description": "Deliberately invalid mutation applied to the valid synthetic checker fixture; rejection is expected.",
+  "set": [
+    [
+      [
+        "checks",
+        0,
+        "subject"
+      ],
+      "cccccccccccccccccccccccccccccccccccccccc"
+    ]
+  ]
+}

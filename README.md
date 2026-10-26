@@ -1,44 +1,26 @@
 # Build Anything Protocol
 
-Plain-English explanation for non-technical readers → [layperson_protocol/README.md](./layperson_protocol/README.md)
+An engineering standard operating procedure for every build and consequential change: define the outcome, preserve safety boundaries, implement within scope, and produce evidence for the exact version delivered.
 
+**Proposed version: 2.0.0-draft.1.** One core with additive profiles, not separate forks. It reduces avoidable failures; it does not promise perfect software or certify production readiness.
 
-This folder captures product and system thinking.
-It answers:
-- What are we building?
-- Why are we building it?
-- What must be true?
+Start with [START_HERE.md](START_HERE.md), follow [CORE.md](CORE.md), and use the [adoption kit](ADOPTION.md). [Plain-English explanations](layperson_protocol/README.md) explain the same rules.
 
-This protocol is intentionally framework-agnostic.
+## What is mandatory
 
----
+Record scope, ownership, requirements, risk, applicable profiles, verification, delivery/recovery, and remaining limits on every change. Scale evidence to risk; a small artifact can use one short record and reuse approved design artifacts with a relevant delta. Unknown is not a pass.
 
-## Checkpoint System
+Preserve stronger project rules and user confirmation requirements. The protocol never grants authority to deploy, publish, spend, change access, or perform destructive actions.
 
-### What checkpoints are
-Checkpoints are **checkpointed architectural accountability**.
-They are repo-local “save points” that capture what is true at major milestones.
+## Repository map
 
-### Why checkpoints exist
-- Prevents drifting away from protocol invariants
-- Makes architecture and intent reviewable over time
-- Creates a durable paper trail for future engineers and AI assistants
-- Forces explicit statements about what is complete vs intentionally not started
+- [Core gates](CORE.md): universal requirements.
+- [Profiles](profiles/README.md): platform and risk-triggered additions.
+- [01–10 phase map](START_HERE.md): familiar planning vocabulary.
+- [Templates](templates/README.md): entrypoint, manifest, checkpoint, review.
+- [Validation](tools/README.md): executable checks and their limits.
+- [Runnable project and bad/good code](examples/reference/README.md): demonstrated behavior and tests.
+- [Historical APINow example](examples/apinow/README.md): illustration, never a default architecture.
+- [Version policy](PROTOCOL_VERSION.md) and [public sources](SOURCES.md).
 
-### Where checkpoints live
-- `/checkpoints/`
-
-Note: Checkpoints are created and updated in applied product repositories that use this protocol.
-This protocol repository defines checkpoint expectations and discipline, but does not execute checkpoints itself.
-
-### Discipline
-- Each checkpoint is written once.
-- If revised, add dated sections rather than rewriting history.
-- Major phases should not advance without an explicit checkpoint.
-
----
- 
-## CP-4 (Execution Realization)
- 
-CP-4 begins only in applied product repositories.
-This protocol repository defines the rules, boundaries, and required artifacts for CP-4, but does not “start CP-4” here.
+This repository applies its own gates when changing the protocol or tooling. Product execution checkpoints remain in applied product repositories.

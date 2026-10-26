@@ -1,20 +1,7 @@
-# Delivery and Ops
+# Delivery and operations (10)
 
-## Goal
-Ship APINow V2 safely with predictable operations.
+Record exact commit/artifact plus build/configuration, target, release owner, authorized action, health/smoke checks, rollout/stop criteria and observation interval. A local handoff can complete preparation while release approval remains pending.
 
-## Operational requirements (conceptual)
-- Verified identity on every request path that matters.
-- Secrets never reach clients.
-- Audit logging for access attempts and outcomes.
-- Usage measurement and limit enforcement on execution paths.
-- Clear error surfaces for operators and users.
+Distinguish code rollback from data repair/restore; define compatibility, backup/restore and recovery evidence proportionate to risk. Services need actionable signals/incident ownership. Static artifacts may need only a delivery/open/render check and owner. Audit/usage needed for security or billing must work before exposure. Record real post-release outcomes separately from the pre-release plan.
 
-## Release discipline
-- Default-deny for new capabilities until explicitly configured.
-- Versioned API definitions for safe evolution.
-- Progressive rollout for risky changes.
-
-## Incident readiness
-- Ability to answer: who accessed what, when, and with what outcome.
-- Ability to revoke credentials and disable endpoints quickly.
+Apply [risk modules](../profiles/risk-modules.md). No vendor or cloud topology is mandated. Preserve all existing publication, deployment, billing, credential and destructive-action confirmations.
