@@ -28,7 +28,7 @@ Keep attestations separate from their subject to avoid self-reference: commit/bu
 
 The checker validates shape, traceability, candidate IDs, readiness states, exception dates, and evidence bytes. It never executes recorded commands or establishes that an approval is authentic. Reviewers inspect evidence quality, source coverage, profile compliance, exception authority, and candidate/build correspondence. A fabricated JSON pass remains false evidence.
 
-Run real project build/tests/security checks alongside record validation. Retain redacted logs as durable artifacts. Do not call a check required unless the repository actually enforces it.
+Run real project build/tests/security checks alongside record validation. Retain redacted logs as durable artifacts. A check may be required by the adopted policy or readiness record; the manifest's `required` flag expresses that obligation. Claim enforcement on a target merge/release path only after verifying that the destination actually enforces the check.
 
 ## Existing application assessment
 
