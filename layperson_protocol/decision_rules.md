@@ -6,6 +6,8 @@ A decision rule is like a **rulebook**.
 If you ask it the same question twice, it must give the same answer.
 It does not guess.
 
+Here "same question" means the same explicit inputs, including current verified permissions. If permissions change, a later action must use the new truth; an old saved result does not grant access forever.
+
 ## Why we treat decision rules as special
 Decision rules are the system’s **gates**.
 They decide “yes” or “no” before anything dangerous or irreversible happens.

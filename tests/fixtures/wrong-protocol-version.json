@@ -1,0 +1,12 @@
+{
+  "description": "Deliberately invalid mutation applied to the valid synthetic checker fixture; rejection is expected.",
+  "set": [
+    [
+      [
+        "protocol",
+        "version"
+      ],
+      "1.0"
+    ]
+  ]
+}

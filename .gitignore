@@ -1,0 +1,5 @@
+__pycache__/
+.test-tmp/
+*.py[cod]
+*.db
+*.db-journal

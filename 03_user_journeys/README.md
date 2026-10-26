@@ -1,17 +1,3 @@
-# User Journeys (03)
+# Journeys (03)
 
-## Purpose
-
-Describe lifecycle flows as workflow states so the system’s responsibilities and transitions are clear.
-These are operational journeys, not UI click-throughs.
-
-## What belongs here
-
-- Lifecycle flows
-- State transitions and key moments in the user lifecycle
-
-## What does not belong here
-
-- Wireframes
-- UI component design
-- Implementation details
+Describe critical success, denied, invalid, repeated/interrupted and recovery flows, including state transitions and consequences. Identify irreversible steps and external effects. Include UI interaction evidence when applicable; wireframes alone do not establish working behavior.

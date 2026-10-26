@@ -1,18 +1,3 @@
 # PRD (01)
 
-## Purpose
-
-Capture the product definition so later phases can remain grounded and reviewable.
-This phase answers: what is being built, for whom, and how success will be judged.
-
-## What belongs here
-
-- Problem statement
-- Audience definition
-- Success criteria
-
-## What does not belong here
-
-- Implementation details
-- Architecture decisions
-- Execution wiring
+Record the problem, intended outcome/users, non-goals, constraints and measurable acceptance criteria with stable IDs. Avoid stack prescriptions. Link approved existing requirements and state the change's delta. Each acceptance criterion must map to a check/evidence in the [record](../templates/protocol-record.json).

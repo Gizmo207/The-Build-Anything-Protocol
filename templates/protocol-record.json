@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "protocol": {
+    "version": "2.0.0-draft.1",
+    "source_revision": "REPLACE_FULL_PROTOCOL_COMMIT_OR_DIGEST"
+  },
+  "subject": "REPLACE_FULL_CANDIDATE_COMMIT_OR_DIGEST",
+  "project": {
+    "name": "REPLACE_PROJECT",
+    "scope": "REPLACE_BOUNDED_CHANGE",
+    "outcome": "REPLACE_MEASURABLE_OUTCOME",
+    "users": "REPLACE_USERS",
+    "non_goals": "REPLACE_EXCLUSIONS",
+    "constraints": "REPLACE_CONSTRAINTS",
+    "authority": "REPLACE_AUTHORIZED_SCOPE",
+    "owner": "REPLACE_ACCOUNTABLE_OWNER",
+    "risk": "low",
+    "risk_reason": "REPLACE_IMPACT_EXPOSURE_REVERSIBILITY_UNCERTAINTY",
+    "instructions": "AGENTS.md"
+  },
+  "profiles": {
+    "web": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "mobile": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "backend": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "automation": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "artifact": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "identity": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "data": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "payments": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "integration": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    },
+    "operations": {
+      "status": "unresolved",
+      "reason": "REPLACE_APPLICABILITY_REASON"
+    }
+  },
+  "requirements": [
+    {
+      "id": "AC-1",
+      "acceptance": "REPLACE_MEASURABLE_CRITERION",
+      "checks": [
+        "T-1"
+      ]
+    }
+  ],
+  "risks": {
+    "deadlocks": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "resource_leaks": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "n_plus_one": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "distributed_locks": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "eventual_consistency": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "failover": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "load_balancing": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "rollback": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "security": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "privacy": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    },
+    "accessibility": {
+      "status": "unresolved",
+      "reason": "REPLACE_RISK_AND_CONTROL_OR_NA_REASON",
+      "checks": []
+    }
+  },
+  "checks": [
+    {
+      "id": "T-1",
+      "required": true,
+      "enabled": true,
+      "command": "REPLACE_EXACT_COMMAND_OR_MANUAL_PROCEDURE",
+      "environment": "REPLACE_RUNTIME_OS_DEPENDENCIES",
+      "recorded_at": "REPLACE_UTC_TIMESTAMP",
+      "result": "not_run",
+      "exit_code": null,
+      "subject": "REPLACE_FULL_CANDIDATE_COMMIT_OR_DIGEST",
+      "protocol_revision": "REPLACE_FULL_PROTOCOL_COMMIT_OR_DIGEST",
+      "artifact": "",
+      "sha256": ""
+    }
+  ],
+  "gates": {
+    "scope": {
+      "status": "not_started",
+      "evidence": "REPLACE_FACTUAL_GATE_EVIDENCE_OR_BLOCKER"
+    },
+    "design": {
+      "status": "not_started",
+      "evidence": "REPLACE_FACTUAL_GATE_EVIDENCE_OR_BLOCKER"
+    },
+    "build": {
+      "status": "not_started",
+      "evidence": "REPLACE_FACTUAL_GATE_EVIDENCE_OR_BLOCKER"
+    },
+    "verify": {
+      "status": "not_started",
+      "evidence": "REPLACE_FACTUAL_GATE_EVIDENCE_OR_BLOCKER"
+    },
+    "deliver": {
+      "status": "not_started",
+      "evidence": "REPLACE_FACTUAL_GATE_EVIDENCE_OR_BLOCKER"
+    },
+    "operate": {
+      "status": "not_started",
+      "evidence": "REPLACE_FACTUAL_GATE_EVIDENCE_OR_BLOCKER"
+    }
+  },
+  "exceptions": [],
+  "release": {
+    "mode": "local_review",
+    "destination": "REPLACE_EXACT_DESTINATION",
+    "owner": "REPLACE_OWNER",
+    "authorization": "REPLACE_AUTHORIZED_ACTION_AND_PENDING_APPROVALS",
+    "artifact": "REPLACE_SUBJECT_BUILD_OR_ARTIFACT_DIGEST",
+    "configuration": "REPLACE_RELEVANT_BUILD_CONFIG",
+    "reviewer": "REPLACE_REVIEWER_LABEL_SELF_REVIEW",
+    "stop_criteria": "REPLACE_ABORT_THRESHOLD",
+    "observation_window": "REPLACE_INTERVAL",
+    "rollback": "REPLACE_CODE_AND_DATA_RECOVERY",
+    "observability": "REPLACE_SIGNALS_AND_FOLLOWUP_OWNER"
+  }
+}

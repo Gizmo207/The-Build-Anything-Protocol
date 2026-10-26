@@ -1,16 +1,3 @@
-# Domain Map (05)
+# Domain map (05)
 
-## Purpose
-
-Establish the high-level domain boundaries so decisions have clear ownership and do not drift across layers.
-
-## What belongs here
-
-- Domain map
-- Conceptual boundaries and ownership intent
-
-## What does not belong here
-
-- Detailed entity schemas
-- Implementation structure
-- Framework-specific architecture
+Give each consequential rule and mutable state one authoritative owner. Identify trust boundaries, dependencies and orchestration. Boundaries can be functions/modules in one process. Prefer a modular monolith; extract services only for demonstrated needs. Reuse approved maps with a stated delta.

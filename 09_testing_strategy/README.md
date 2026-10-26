@@ -1,17 +1,7 @@
-# Testing Strategy
+# Verification (09)
 
-## Goal
-Prove the decision rules and safety invariants are correct, and prevent regressions.
+Plan checks before implementation and execute them against the exact candidate. Trace requirements and invariants/risks to IDs, commands/manual procedures, environment/tool versions, UTC time, exit outcome, retained output/digest and subject revision.
 
-## Focus
-- Pure decision logic gets the most tests.
-- Controllers orchestrate and should be tested at boundary level.
-- Services/adapters are tested for I/O correctness and error mapping.
+Test pure rules, real boundary enforcement and relevant I/O/contracts; include denied/invalid, interrupted/repeated, partial failure/recovery and representative critical journeys. Use performance/query/resource budgets and manual accessibility checks when relevant. No universal coverage percentage is imposed.
 
-## Non-goals
-- No snapshot testing of business rules in UI.
-- No "mocked" production behavior outside tests.
-
-## Regression anchors
-- `legacy/analysis/legacy_read_report.md` is the anti-regression checklist.
-- Tests should explicitly cover the mistakes V1 made (e.g., identity from headers, implicit exposure).
+Record passed, failed, blocked and not run distinctly. Mocks do not prove integration, syntax does not prove interaction, and the checker does not establish truth. Missing dependencies/access block affected claims. Rerun affected checks after candidate changes. See [tool limits](../tools/README.md) and [tested examples](../examples/reference/README.md).

@@ -1,0 +1,25 @@
+{
+  "description": "Deliberately invalid mutation applied to the valid synthetic checker fixture; rejection is expected.",
+  "set": [
+    [
+      [
+        "exceptions"
+      ],
+      [
+        {
+          "control": "optional_review_format",
+          "scope": "Fixture",
+          "reason": "Test",
+          "owner": "Owner",
+          "approved_by": "self",
+          "approver_type": "agent",
+          "expires": "2099-01-01T00:00:00Z",
+          "approval_artifact": "output.txt",
+          "approval_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "mitigation": "Temporary test",
+          "followup": "Reject fixture"
+        }
+      ]
+    ]
+  ]
+}
